@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+  command = "npm run build" # Eğer bir build komutunuz yoksa bunu kaldırabilirsiniz
+
+[dev]
+  command = "npm start" # Geliştirme sunucusu için komut
+  port = 3000 # Geliştirme sunucusu portu
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
